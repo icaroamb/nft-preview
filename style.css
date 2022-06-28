@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0d192b;
+    height: 90vh;
+    width: 98vw;
+    padding-bottom: 20px;   
+}
+main{
+    width: 40%;
+    min-width: 350px;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: #14253d;
+    padding-bottom: 30px;
+    height: 550px;
+}
+
+main h1{
+    color: #fff;
+    text-align: center;
+    margin:15px 10px;
+    font-size: 25px;
+}
+
+main p{
+    color: #8bacda;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+}
+
+div#imagem{
+    text-align: center;
+}
+div#imagem img{
+    margin-top: 20px;
+    min-width: 200px;
+    width: 60%;
+    border-radius: 20px;
+}
+
+section#info{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section#info #dinheiro{
+    color: #00fff7;
+    font-size: 20px;
+}
+
+section#creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    border-top: 1px solid #00fff7; 
+    padding-top: 20px;
+}
+
+section#creator img{
+    width: 80px;
+    border-radius: 50%;
+    border-bottom: 3px solid #00fff7; 
+    border-right: 3px solid #00fff7; 
+    border-left: 3px solid rgb(233, 128, 99);
+    border-top: 3px solid rgb(233, 128, 99);
+}
+
+section span{
+    color: #fff;
+}
+
+@media (max-width: 350px){
+    main{
+        margin: 10px;
+    }
+}

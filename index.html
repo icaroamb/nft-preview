@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body>
+  <main>
+    <div id="imagem" onmousemove="entrar()" onmouseleave="sair()"><img src="images/image-equilibrium.jpg" alt="NFT-EQUILIBRIUM"></div>
+    <h1>Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <section id="info">
+      <p id="dinheiro"><img src="images/icon-ethereum.svg">   0.041 ETH</p>
+      <p id="clock"><img src="images/icon-clock.svg">  3 days left</p>
+    </section>
+    <section id="creator">
+      <img src="images/image-avatar.png" alt="Jules Wyvern">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </section>
+  </main>
+  <script>
+    function entrar(){
+      let imagem = document.getElementById('imagem')
+      imagem.style.height = '1000px'
+    }
+
+    function sair(){
+      let imagem = document.getElementById('imagem')
+      imagem.style.height = 'auto'
+    }
+  </script>
+</body>
+</html>
